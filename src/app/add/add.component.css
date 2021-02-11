@@ -12,3 +12,31 @@
 main{
     color:white;
 }
+
+.prepositions{
+    float: left;
+    width:20%;
+}
+
+.word{
+    float: right;
+    width:80%  !important;
+}
+
+.submit{
+    clear: both;
+    display:block;
+    background-color: black;
+    width: 100%;
+}
+
+@media only screen and (max-width: 1240px) {
+    .prepositions{
+        float: left;
+        width:100%;
+    }
+    .word{
+        float: right;
+        width:100%  !important;
+    }
+}
