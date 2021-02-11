@@ -1,0 +1,38 @@
+.question{
+    background-color:#ffffff;
+    padding: 2em;
+}
+
+.answer{
+    list-style: none;
+    width:100%;
+    height:3em;
+    margin:0;
+    border: 1px solid rgb(255 255 255);
+    text-align:center;
+    line-height: 3em;
+    color:  rgb(255 255 255);
+}
+
+.wrong{
+    background-color: lightcoral;
+    color:black;
+}
+
+.right{
+    background-color: lightgreen;
+    color:black;
+}
+
+.neutral{
+    background-color: #52afc0;
+}
+
+.menu {
+    margin-top: 3rem;
+    padding:0;
+}
+
+.word{
+    font-size:2rem;
+}

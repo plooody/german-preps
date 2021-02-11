@@ -1,0 +1,28 @@
+<main class="container ">
+    <div class="fullscreen ">
+        <h1>Add words</h1>
+        <div class="container ">
+            <div class="row">
+                
+                <div class="col-lg-12">
+                    <form>
+                        <div class="form-group">
+
+                          <label for="exampleInputPrep">Preposition</label>
+                          <input [(ngModel)]="preposition" name="preposition" type="text" class="form-control" id="exampleInputPrep" aria-describedby="prepHelp" placeholder="Enter Preposition">
+                          <small id="prepHelp" class="form-text text-muted">Type in a preposition</small>
+
+                          <label for="exampleInputWord">Word</label>
+                          <input [(ngModel)]="word" name="word" type="text" class="form-control" id="exampleInputWord" aria-describedby="wordHelp" placeholder="Enter Word">
+                          <small id="wordHelp" class="form-text text-muted">Type in a word</small>
+
+                        </div>
+                        <button (click)="add()" type="submit" class="btn btn-primary">Submit</button>
+                      </form>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</main>
+

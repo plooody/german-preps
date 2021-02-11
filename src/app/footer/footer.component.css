@@ -1,0 +1,10 @@
+.navigation{
+    background-color: rgba(0, 0, 0, 0.2)
+}
+
+.footerWrap {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+  }

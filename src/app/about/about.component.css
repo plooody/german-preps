@@ -1,0 +1,14 @@
+.fullscreen{
+    left: 0;
+    line-height: 2rem;
+    margin: 25% 0;
+    text-align: center;
+    width: 100%;
+}
+
+.max-50{
+    max-width:50%;
+}
+main{
+    color:white;
+}

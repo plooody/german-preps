@@ -1,0 +1,17 @@
+<div class="container menu">
+
+    <div class="row center-align">
+        <div class="col-lg-12 question" >
+            <h3 class="">What is the preposition for <span class="word"> {{word}} </span> ?</h3>
+        </div>
+    </div>
+
+    <div class="row center-align noselect">
+        <div *ngFor="let quizAnswer of quizAnswers" [ngClass]="setClass(quizAnswer.id)" (click)="chooseQuestion(quizAnswer.id)" id="{{quizAnswer.id}}">
+            {{quizAnswer.ans}}           
+        </div>
+        <div class="neutral answer" (click) ="newQuestion()">
+            New word please! 
+        </div>
+    </div>
+</div>

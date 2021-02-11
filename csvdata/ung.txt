@@ -1,0 +1,47 @@
+m,Abschwung
+m,Absprung
+m,Aufschwung
+m,Blasensprung
+m,Bocksprung
+m,Deckssprung
+m,Dreisprung
+m,Dung
+m,Eisprung
+m,Felgaufschwung
+m,Felsvorsprung
+m,Freudensprung
+m,Hammelsprung
+m,Hartung
+m,Hechtsprung
+m,Hochsprung
+m,Hornung
+m,Katzensprung
+m,Kopfsprung
+m,Kuhdung
+m,Lippenentzündung
+m,Mauervorsprung
+m,Nachkriegsaufschwung
+m,Nebelung
+m,Nibelung
+m,Quantensprung
+m,Rollsprung
+m,Rösselsprung
+m,Schersprung
+m,Schwung
+m,Seitensprung
+m,Sprachursprung
+m,Sprung
+m,Stabhochsprung
+m,Stimmungsumschwung
+m,Stratosphärensprung
+m,Strecksprung
+m,Umschwung
+m,Ursprung
+m,Vorsprung
+m,Weitsprung
+m,Wetterumschwung
+m,Wirtschaftsaufschwung
+m,Zeilensprung
+ung= 0.9904823707549211
+ung/all= 0.059857774059452536
+ung that follows: 4579 out of 4623
