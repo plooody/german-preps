@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { connectableObservableDescriptor } from 'rxjs/internal/observable/ConnectableObservable';
 
 @Injectable({
   providedIn: 'root'
@@ -23,6 +24,12 @@ export class WordsService {
   }
 
   public push(preposition:string ,word:string ){
+    const regexp = new RegExp('^(der|die|das)+$')
+
+    if(  preposition == undefined || !regexp.test(preposition) || word == undefined || word.trim() == "" ){
+      return 
+    }
+
     this.words.push( {word:word, preposition:preposition} );
   }
 
