@@ -1,0 +1,18 @@
+<div class="container">
+
+    <div class="row center-align">
+        <div class="col-lg-12 question" >
+            <h3 class="">Valami</h3>
+        </div>
+    </div>
+
+    <div class="row center-align">
+        <div class="col-lg-12 question" >
+            <ul class="list-group">
+                <li [attr.id]="'word' + word.id" *ngFor="let word of list" class="list-group-item">{{word.preposition}} {{word.word}}
+                    <button (click)="delete(word.id)" class = "deletebutton  btn btn-dark" > Delete </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

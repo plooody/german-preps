@@ -1,0 +1,15 @@
+.question{
+    background-color:#ffffff;
+    padding: 2em;
+}
+
+.container {
+    padding: 2em;
+    margin-top: 3rem;
+    padding:0;
+    background-color:#ffffff;
+}
+
+.deletebutton{
+    float:right;
+}
