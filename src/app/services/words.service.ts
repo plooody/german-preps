@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { connectableObservableDescriptor } from 'rxjs/internal/observable/ConnectableObservable';
 
 @Injectable({
   providedIn: 'root'
@@ -8,12 +7,15 @@ import { connectableObservableDescriptor } from 'rxjs/internal/observable/Connec
 export class WordsService {
 
   constructor() { }
+
   words = [
-    {word:"Auto",   preposition:"das"},
-    {word:"Mantel", preposition:"die"},
-    {word:"Bär",    preposition:"der"}
+    {word:"Auto",   preposition:"das" , id:0},
+    {word:"Mantel", preposition:"die" , id:1},
+    {word:"Bär",    preposition:"der" , id:2}
   ]
 
+  counter=this.words.length
+  
   public getWords(){
     return this.words;
   }
@@ -29,8 +31,16 @@ export class WordsService {
     if(  preposition == undefined || !regexp.test(preposition) || word == undefined || word.trim() == "" ){
       return 
     }
+    this.counter++
+    this.words.push( {word:word, preposition:preposition, id:this.counter} );
+  }
 
-    this.words.push( {word:word, preposition:preposition} );
+  public delete(id:number){
+
+    this.words = this.words.filter(function( word ) {
+      return word.id != id;
+    });
+
   }
 
 }

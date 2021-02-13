@@ -1,7 +1,7 @@
-<div class="container menu">
+<div *ngIf="filled; else elseBlock" class="container menu">
 
     <div class="row center-align">
-        <div class="col-lg-12 question" >
+        <div class="col-lg-12 question">
             <h3 class="">What is the preposition for <span class="word"> {{word}} </span> ?</h3>
         </div>
     </div>
@@ -14,4 +14,29 @@
             New word please! 
         </div>
     </div>
+
 </div>
+
+<ng-template #elseBlock>
+    
+    <main class="container">
+        <div class="fullscreen ">
+            <h1>No Words</h1>
+            <div class="container ">
+                <div class="row">
+                    <div class="col-lg-3">
+    
+                    </div>
+                    <div class="col-lg-6">
+                        <p class="lead ">Add some words please</p>
+                    </div>
+                    <div class="col-lg-3">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+s    
+
+</ng-template>

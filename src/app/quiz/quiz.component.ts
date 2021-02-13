@@ -13,8 +13,9 @@ export class QuizComponent implements OnInit {
   constructor( private _wordsService: WordsService ) {
   }
  
-  AnAnswer:any
+  AnAnswer:string
   word = ""
+  
   quizAnswers=[
     {
       ans:"der",
@@ -38,6 +39,8 @@ export class QuizComponent implements OnInit {
     }
   ]
 
+  filled=true
+
   question="What is the preposition for Auto?"
 
   ngOnInit(): void {
@@ -46,6 +49,10 @@ export class QuizComponent implements OnInit {
 
   newQuestion():void{
     const word = this._wordsService.getRandom()
+    if(word===undefined){
+      this.filled=false
+      return
+    }
     this.word = word.word 
     this.quizAnswers.forEach(element => {
       element.clicked=false;
